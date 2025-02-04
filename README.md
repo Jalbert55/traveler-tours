@@ -1,6 +1,6 @@
 # Traveler Tours - Sitio Web de Agencia de Viajes
 
-![Traveler Tours Logo](https://via.placeholder.com/150) <!-- Reemplaza con la URL de tu logo -->
+![Traveler Tours Logo](https://www.travelertours.com.mx/assets/Logo-E6pU4Lji.svg) <!-- Reemplaza con la URL de tu logo -->
 
 Bienvenido al repositorio del sitio web de **Traveler Tours**, una agencia de viajes especializada en ofrecer experiencias únicas y personalizadas. Este proyecto fue desarrollado con **React** y una variedad de librerías modernas para garantizar un diseño atractivo y una experiencia de usuario fluida.
 
