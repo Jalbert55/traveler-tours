@@ -1,0 +1,15 @@
+.beneficios {
+  background-image: url('../assets/p3.jpg'); /* Cambia la ruta a tu imagen */
+  background-size: cover; /* Asegúrate de que la imagen cubra el área */
+  background-position: center center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.card-beneficio {
+  transition: transform 0.3s ease-in-out;
+  height: 100%; /* Asegúrate de que las tarjetas tengan la misma altura */
+}
+
+.card-beneficio:hover {
+  transform: scale(1.05);
+}

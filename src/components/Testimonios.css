@@ -1,0 +1,164 @@
+.testimonios-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 35em;
+    width: 98%;
+    display: inline-block;
+    margin: 20px auto;
+  }
+
+  .tcontainer {
+    background-image: url('../assets/p4.jpg'); /* Cambia la ruta a tu imagen */
+    background-size: cover; /* Asegúrate de que la imagen cubra el área */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .testimonios {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left; /* Alinear el texto a la izquierda */
+  }
+  
+  input[type="text"],
+  textarea,
+  select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btnEnviar {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+  .btnEnviar:hover {
+      background-color: #0056b3;
+  }
+
+  .testimonio {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px;
+    background-color: #fff;
+    text-align: left; /* Alinear el texto a la izquierda */
+  }
+
+  .testimonios-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .testimonio-content {
+    display: flex; /* Usar flexbox para alinear la imagen y el texto */
+    align-items: center; /* Centrar verticalmente */
+  }
+  
+  .testimonio-imagen {
+    width: 50px; /* Ajusta el tamaño de la imagen */
+    height: 50px; /* Ajusta el tamaño de la imagen */
+    border-radius: 50%; /* Hacer la imagen circular */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+  }
+  
+  .testimonio-texto {
+    flex-grow: 1; /* Permitir que el texto ocupe el espacio restante */
+  }
+  
+  .testimonio-nombre {
+    font-weight: bold; /* Nombre en negrita */
+    margin: 0; /* Eliminar margen */
+  }
+  
+  .testimonio-calificacion {
+    margin: 5px 0; /* Espaciado entre la calificación y el comentario */
+  }
+  
+  .testimonio-comentario {
+    margin: 0; /* Eliminar margen */
+  }
+  
+  .testimonio img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .image-selection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  
+  .image-option {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    flex-direction: column-reverse;
+  }
+  
+  .google-button {
+    padding: 10px;
+    background-color: #4285F4; /* Color de Google */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .google-button:hover {
+    background-color: #357AE8; /* Color más oscuro al pasar el mouse */
+  }
+
+  .logged-user {
+    display: flex;
+    align-items: center;
+    background-color: #007BFF; /* Azul */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    color: white; /* Texto blanco */
+    max-width: 300px; /* Ajustar el ancho */
+    margin: 10px auto; /* Centrado horizontal */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  .user-picture {
+    width: 50px; /* Tamaño de la imagen */
+    height: 50px; /* Mantener proporción */
+    border-radius: 50%; /* Hacerla circular */
+    margin-right: 15px; /* Separación entre imagen y texto */
+    border: 2px solid white; /* Borde blanco */
+  }
+  
+  .user-name {
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    flex-grow: 1; /* Tomar el espacio restante */
+    text-align: left; /* Alinear a la izquierda */
+    margin: 0; /* Eliminar márgenes */
+  }
+  

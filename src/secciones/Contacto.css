@@ -1,0 +1,114 @@
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  text-align: center;
+  flex-direction: column;
+  position: relative; /* Hacemos la sección relativa para posicionar el overlay */
+}
+
+.contacto-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  background-color: #f1f1f1;
+  text-align: center;
+  flex-direction: column;
+  position: relative; /* Hacemos la sección relativa para posicionar el overlay */
+  background-image: url('../assets/p8.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+  
+.contacto-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(167, 167, 167, 0.781);
+  z-index: 0; /* Aseguramos que el overlay esté encima de la imagen de fondo */
+}
+
+.contacto h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: darkblue;
+}
+
+.contacto-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  gap: 20px;
+  width: 1000px;
+}
+
+.contacto-container input {
+  background-color: rgba(126, 126, 126, 0.80);
+}
+
+.contacto-container textarea {
+  background-color: rgba(126, 126, 126, 0.80);
+}
+
+.mapa {
+  flex: 1;
+  width: 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
+  height: 450px; /* Establecemos una altura fija para ambos elementos */
+  border-radius: 10px;
+  border: 5px solid blue;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(126, 126, 126, 0.5);
+  display: flex; /* Hacemos que el formulario sea un contenedor flex */
+  flex-direction: column; /* Organizamos los elementos del formulario en columna */
+  justify-content: space-around; /* Distribuimos los elementos de forma equitativa */
+  margin-bottom: 0;
+}
+
+.mapa iframe {
+  width: 500px; /* Asegura que el iframe ocupe todo el ancho del contenedor .mapa */
+  height: 100%; /* Asegura que el iframe ocupe toda la altura del contenedor .mapa */
+}
+
+@media (max-width: 801px) {
+  .contacto {
+    padding-top: 5vh;
+    width: -webkit-fill-available;
+  }
+
+  .contacto-container {
+    flex-direction: column; /* Apila los elementos verticalmente */
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+
+  .contacto-page {
+    padding-bottom: 10vh;
+  }
+
+  .mapa {
+    margin-top: 20px; /* Agrega un margen superior al mapa */
+  }
+
+  .mapa iframe {
+    width: 100%; /* Asegura que el iframe ocupe todo el ancho del contenedor .mapa */
+    height: 50vh; /* Establece una altura fija para el mapa */
+  }
+}
+
+@media (max-width: 425px) {
+  #main {
+    width: 450px;
+  }
+
+  .contacto {
+    padding-top: 10vh;
+  }
+}

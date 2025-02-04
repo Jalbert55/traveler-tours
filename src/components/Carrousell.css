@@ -1,0 +1,38 @@
+.Carrousell-container {
+  width: 100%; /* Ensure container occupies full width */
+  text-align: center;
+  overflow: hidden; /* Prevent content overflow */
+  height: max-content; /* Adjust height as needed */
+  background-image: url('../assets/p3.jpg'); /* Cambia la ruta a tu imagen */
+  background-size: cover; /* Asegúrate de que la imagen cubra el área */
+  background-position: center center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.carousel-item {
+  width: 100%; /* Ensure each item occupies 100% width */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.carousel-item-image {
+  width: 100%; /* Images occupy full width of container */
+  height: auto; /* Maintain image aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  /* Fix image clipping issue: */
+  object-fit: cover; /* Ensure image covers the entire slide area */
+  max-height: 100%; /* Prevent image overflow */
+}
+
+.slick-slide {
+  margin: 0;
+}
+
+/* Remove unnecessary styles */
+.grid,
+.grid-item,
+.promo-button,
+.promo-button img {
+  display: none;
+}

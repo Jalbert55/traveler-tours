@@ -1,0 +1,9 @@
+.splash-screen {
+    transition: opacity 0.5s ease; /* Duración y tipo de transición */
+    opacity: 1; /* Opacidad inicial */
+    z-index: 9999;
+}
+
+.splash-screen.fade-out {
+    opacity: 0; /* Opacidad final al desvanecerse */
+}

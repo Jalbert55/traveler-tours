@@ -1,0 +1,212 @@
+.albumSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    text-align: center;
+    flex-direction: column;
+    position: relative; /* Hacemos la sección relativa para posicionar el overlay */
+}
+
+.album-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-color: #f1f1f1;
+    text-align: center;
+    flex-direction: column;
+    position: relative; /* Hacemos la sección relativa para posicionar el overlay */
+    background-image: url('../assets/fondoFotos-effe4d77.webp');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 20vh;
+    padding-bottom: 50vh;
+}
+
+.album-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(167, 167, 167, 0.781);
+    z-index: 0; /* Aseguramos que el overlay esté encima de la imagen de fondo */
+}
+
+.albumSec h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(0, 0, 255);
+}
+
+.album-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px; /* Añade un espacio de 20px entre los elementos */
+}
+
+.album-form {
+    flex: 1;
+    width: 100%; /* Cambia a 100% para que ocupe todo el ancho disponible */
+    height: 50vh; /* Establecemos una altura fija para ambos elementos */
+    border-radius: 10px;
+    display: flex; /* Hacemos que el formulario sea un contenedor flex */
+    flex-direction: row; /* Organizamos los elementos del formulario en fila */
+    justify-content: center; /* Distribuimos los elementos de forma equitativa */
+    margin-bottom: 0;
+    flex-wrap: nowrap;
+    align-items: center; /* Alinea los elementos al centro */
+}
+
+.album-form label {
+    margin-bottom: 5px; /* Agrega un pequeño margen inferior al label */
+}
+
+.album-form label,
+.album-form input,
+.album-form button {
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(0, 0, 255);
+}
+
+.album-form label {
+    text-align: end;
+}
+
+.album-form button {
+    background-color: rgb(0, 0, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 25%; /* Mantén el ancho del botón */
+    height: 100%; /* Asegúrate de que el botón tenga la misma altura que el input */
+    margin-left: 10px;
+}
+
+.album-form input {
+    flex: 1; /* Permite que el input ocupe el espacio restante */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100%; /* Asegúrate de que el input tenga una altura adecuada */
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Crea un grid responsivo */
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-top: 20px; /* Espacio superior para la galería */
+}
+
+.image-item {
+    position: relative; /* Para posicionar el modal sobre la imagen */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+}
+
+.image-item img {
+    width: 100%; /* Asegúrate de que la imagen ocupe todo el ancho de la celda */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
+}
+  
+  .image-actions {
+    margin-top: 10px;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050; /* Asegúrate de que el z-index sea alto */
+}
+
+.modal-dialog {
+    max-width: 80%; /* Ajusta el ancho del modal según sea necesario */
+    margin: 0; /* Elimina el margen para centrar el modal */
+}
+
+.modal-content {
+    position: relative; /* Asegúrate de que el contenido del modal sea relativo */
+    background-color: #fff; /* Fondo blanco para el contenido del modal */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Evita el desbordamiento del contenido */
+}
+
+.modal-content img {
+    width: 100vh; /* Asegúrate de que la imagen ocupe todo el ancho del modal */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.close-button {
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute; /* Cambia a absolute para posicionar en relación al modal */
+    top: 10px; /* Ajusta la posición superior */
+    right: 15px; /* Ajusta la posición derecha */
+    color: #333; /* Color del botón de cerrar */
+    z-index: 1; /* Asegúrate de que esté por encima del contenido */
+}
+
+.image-actions button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px 10px; /* Ajusta el relleno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin-right: 5px; /* Añade un pequeño margen derecho */
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Espacio entre la imagen y los botones de navegación */
+}
+
+.nav-button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.nav-button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+@media (max-width: 768px) {
+    .album {
+        padding-top: 5vh;
+    }
+
+    .album-page {
+        width: fit-content;
+    }
+
+    .album-container {
+        flex-direction: column; /* Apila los elementos verticalmente */
+    }
+
+    .album-form {
+        width: 100%; /* Ocupan todo el ancho disponible */
+    }
+}

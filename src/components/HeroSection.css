@@ -1,0 +1,180 @@
+/* HeroSection.css */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../assets/p1.jpg'); /* Cambia la ruta a tu imagen */
+    background-size: cover; /* Asegúrate de que la imagen cubra el área */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 0 2rem;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    background: linear-gradient(to bottom, transparent, rgb(211, 211, 211));
+}
+
+.hero-container {
+    position: relative;
+    width: 100vw; /* Cambiar a 100vw para ocupar todo el ancho de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text-container {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    z-index: 1;
+    display: flex; /* Agrega display: flex al contenedor de texto */
+    flex-direction: column-reverse; /* Ordena los elementos verticalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 100%; /* Ocupa toda la altura del contenedor */
+    justify-content: flex-start;
+    order: 1;
+    padding-top: 10%;
+}  
+
+.dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.hero-video {
+    position: fixed; /* Fija el video en el fondo */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ancho completo de la ventana */
+    height: 100vh; /* Altura completa de la ventana */
+    object-fit: cover; /* Asegura que el video cubra toda el área */
+    z-index: -1; /* Coloca el video detrás de otros elementos */
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Transición suave para el video */
+}
+
+.hero-video.hidden {
+    opacity: 0; /* Oculta el video mientras se carga */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    z-index: 1; /* Asegúrate de que el overlay esté por encima del video */
+}
+
+.hero-title {
+    font-size: 5vw;
+    margin: 8rem 0;
+    position: absolute; /* Posiciona el título de forma absoluta */
+    color: #feb044;
+    text-shadow: 3px 3px 2px #000;
+    text-align: center;
+    width: max-content;
+    order: 2;
+}
+
+.hero-subtitle {
+    font-size: 3vw;
+    margin: 5rem 0;
+    position: absolute;
+    color: #feb044;
+    text-shadow: 3px 3px 2px #000;
+    text-align: center;
+    width: max-content;
+    padding-top: 150%;
+    order: 3;
+}
+
+.hero-button {
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    bottom: 0px; /* Ajusta la distancia desde el borde inferior */
+    top: 40vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent; /* Quita el fondo del botón */
+    border: none; /* Quita la borde*/
+    order: 4;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(167, 167, 167, 0.39); /* Semi-transparente negro */
+    z-index: 0; /* Coloca el overlay detrás del contenido */
+  }
+
+#Boletin.modal {  /* Add the class .modal here */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(-100%); /* Initially, the modal is outside the view */
+  }
+  
+  #Boletin.modal.show {
+    transform: translateY(0); /* When the modal is shown, it slides down */
+  }
+
+  .modal-boletin {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 60vh;
+    height: 60vh;
+  }
+
+/* Media Queries para ajustar el tamaño de la fuente en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 6vw; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+    }
+
+    .hero-subtitle {
+        font-size: 3.5vw; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 780px) {
+    .hero-title {
+        font-size: 5vw; /* Ajusta aún más para pantallas pequeñas */
+    }
+
+    .hero-subtitle {
+        font-size: 3vw; /* Ajusta aún más para pantallas pequeñas */
+    }
+}

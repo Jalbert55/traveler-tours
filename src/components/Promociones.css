@@ -1,0 +1,126 @@
+.promociones {
+    position: relative;
+    overflow: hidden;
+    height: auto; /* Cambia a auto para que se ajuste al contenido */
+    background-image: url('../assets/p2.jpg'); /* Cambia la ruta a tu imagen */
+    background-size: cover; /* Asegúrate de que la imagen cubra el área */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding-top: 20vh;
+}
+
+.promociones h1 {
+  color: #000000;
+  text-align: center; /* Alinea el texto a la izquierda */
+  justify-content: center;
+  margin: 0; /* Elimina el margen para que se alinee mejor */
+  font-size: xx-large; /* Ajusta el tamaño del texto */
+}
+
+.promo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(167, 167, 167, 0.75); /* Semi-transparente negro */
+  z-index: 0; /* Coloca el overlay detrás del contenido */
+}
+
+.slick-slide {
+    margin: 0 10px; /* Espaciado entre las tarjetas */
+}
+
+.promociones::before {
+    content: "";
+    position: absolute;
+    top: 0; /* Cambia a 'top: 0' para posicionar el degradado en la parte superior */
+    left: 0;
+    width: 100%;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    background: linear-gradient(to bottom, rgb(211, 211, 211), transparent); /* Invierte la dirección del degradado */
+  }
+
+  .album {
+    position: relative; /* Necesario para posicionar el elemento ::after */
+    width: 100vw;
+    height: 12vh; /* Ocupa toda la altura de la ventana */
+    background-image: url('../assets/fondoFotos-effe4d77.webp');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  .album::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6); /* Fondo blanco translúcido */
+  }
+  
+  .album h1 {
+    position: absolute; /* Posiciona el texto sobre el fondo */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el texto */
+    color: #333;
+    text-align: center;
+    font-size: 2rem;
+    z-index: 1; /* Asegúrate de que el texto esté encima del fondo */
+  }
+
+  /* Modal Styles */
+  .modal {
+    position: fixed; /* Asegúrate de que el modal esté en posición fija */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050; /* Asegúrate de que el z-index sea alto */
+}
+
+.modal-dialog {
+    max-width: 80%; /* Ajusta el ancho del modal según sea necesario */
+    margin: 0; /* Elimina el margen para centrar el modal */
+}
+
+.modal-content {
+    background-color: #fff; /* Fondo blanco para el contenido del modal */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Permite el desplazamiento si el contenido es demasiado grande */
+    max-height: 80vh; /* Define una altura máxima para el modal */
+}
+
+.modal-header {
+  padding: 15px; /* Adjust padding */
+  border-bottom: 1px solid #ddd; /* Add border */
+}
+
+.modal-title {
+  font-weight: bold; /* Make title bold */
+}
+
+.modal-body {
+  padding: 20px; /* Adjust padding */
+}
+
+.modal-image {
+  width: 100%; /* Set image width */
+  max-height: 300px; /* Set max image height */
+  object-fit: cover; /* Scale image to fit container */
+  margin-bottom: 15px; /* Add margin below image */
+}
+
+.modal-footer {
+  padding: 10px; /* Adjust padding */
+  border-top: 1px solid #ddd; /* Add border */
+}

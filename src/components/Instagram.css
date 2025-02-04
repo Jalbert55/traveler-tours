@@ -1,0 +1,5 @@
+.instagram-feed iframe {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 85vh; /* Ajusta la altura automáticamente según el contenido */
+    border: none; /* Elimina el borde por defecto del iframe */
+  }

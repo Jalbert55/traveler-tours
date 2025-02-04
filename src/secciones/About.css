@@ -1,0 +1,106 @@
+.about {
+    display: grid;
+    height: fit-content;
+    background-color: #f1f1f1;
+    background-image: url('../assets/p5.jpg'); /* Cambia la ruta a tu imagen */
+    background-size: cover; /* Asegúrate de que la imagen cubra el área */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    position: relative;
+    z-index: -2;
+  }
+    
+  .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3); /* Blanco con 80% de opacidad */
+    z-index: -1; /* Detrás del texto */
+  }
+
+  .about-container{
+    text-align: center;
+    padding-top: 20vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    z-index: 0; /* Asegúrate de que el contenido esté encima del overlay */
+  }
+
+  .service-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .service-item svg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .service-item p {
+    font-size: 1.3rem;
+  }
+
+  .service-item h3 {
+    font-weight: bold;
+  }
+
+  .section-services h3 {
+    font-weight: bold;
+  }
+
+  .section-group-image, .section-beach-image, .section-services {
+    border: 2px solid #007bff; /* Azul */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .section-group-image {
+    border: 2px solid #007bff; /* Azul */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+  }
+
+  .textos {
+    font-size: 2vw;
+    text-align: justify;
+  }
+
+  .titulos {
+    font-size: 2.5vw;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .title h1 {
+    font-size: 2vw;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 601px) {
+    .textos {
+      font-size: 2.5vw;
+    }
+
+    .titulos {
+      font-size: 4vw;
+    }
+
+    .title h1 {
+      font-size: 6vw;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .about-container {
+      padding-top: 30vh;
+    }
+  }

@@ -1,0 +1,19 @@
+/* En tu archivo CSS principal, por ejemplo, index.css o App.css */
+
+body {
+  font-family: "Aref Ruqaa Ink", serif; /* Aplica la fuente a todo el cuerpo */
+  margin: 0; /* Elimina márgenes por defecto */
+  padding: 0; /* Elimina padding por defecto */
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho y alto total */
+  background-color: #afafaf;
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+  font-family: './fuentes/calisto-mt.ttf';
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

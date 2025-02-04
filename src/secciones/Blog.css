@@ -1,0 +1,137 @@
+.blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    background-color: #f1f1f1;
+    padding-top: 20vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    flex-direction: column;
+    z-index: 1; 
+    position: relative; /* Cambiamos position a relative */
+    background-image: url('../assets/p7.jpg'); /* Cambia la ruta a tu imagen */
+    background-size: cover; /* Asegúrate de que la imagen cubra el área */
+    background-position : center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.blog-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(167, 167, 167, 0.65); /* Semi-transparent negro */
+    z-index: -1; /* Coloca el overlay detrás del contenido */
+}
+
+.blog h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.blog ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #d5d5d5d5;
+}
+
+.blog li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.blog h2 {
+    font-size: 1.5em;
+}
+
+.blog p {
+    font-size: 1em;
+}
+
+.card {
+    width: 100%;
+    margin-bottom: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 2; 
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+}
+
+.modal2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20vh;
+}
+
+.modal-title2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black !important;
+}
+
+#isPasted {
+    text-align: justify;
+}
+
+.modal-body2 p {
+    font-size: 1.3rem;
+    text-align: -webkit-center;
+}
+
+.modal-body2 img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.modal-dialog2 {
+    max-width: 80%; 
+}
+
+.modal-footer2 {
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos al final (derecha) */
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .blog {
+        padding-top: 20vh;
+    }
+    .modal-dialog2 {
+        max-width: 100%; 
+    }
+}
+
+@media (max-width: 700px) {
+    .blog {
+        padding-top: 30vh;
+    }
+}
+
+.modal-content2 {
+    background-color: #fff; /* Agregar fondo blanco al modal */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Agrega overflow-y: auto para permitir el desplazamiento */
+    max-height: 80vh; /* Define una altura máxima para el modal */ 
+}
